@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<body>
+<script>
+
+var numbers = [ 5, 4, 10, 14 ];
+var  data = [
+      { date: '2014-01-01', amount: 10 },
+      { date: '2014-02-01', amount: 20 },
+      { date: '2014-03-01', amount: 40 },
+      { date: '2014-04-01', amount: 80 }
+    ];
+
+var min= d3.min(numbers);
+var extent = d3.extent(numbers);
+var scl = d3.scale.linear().domain([0,10]).range([0,100]);
+
+var qScale = d3.scale.quantile().domain(numbers).range([0,1,2]);
+var q1 = qScale(8);
+console.log("min: " + min);
+console.log("extent: " + extent);
+console.log("scl: " + scl);
+console.log("scl: " + scl(8));
+console.log("qscl1: " + q1);
+
+var max =d3.max(data, function(d, i) { 
+console.log("d.amaont: " + d.amount + " i " + i);
+return d.amount });
+console.log("max " + max);
+
+</script>
+
+<h1>SHU</h1>
+
+<p>IWA</p>
+
+</body>
+</html>
