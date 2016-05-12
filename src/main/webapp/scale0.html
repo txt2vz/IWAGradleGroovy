@@ -21,8 +21,32 @@
   <footer>
     
 <script>
-  var yScale = d3.scale.linear().domain([0,1000]).range([0,100]);
-  console.log("yscale 20: " + yScale(20) );
+   var b = [1,10,4,11, 14];
+   var bExtent = d3.extent(b);
+   console.log ("b ext " + bExtent);
+   
+  var yScale = d3.scale.quantize().domain([0,100]).range(["a", "b", "c","d"]);
+  console.log("yscale 20: " + yScale(77) );
+  
+  var gScale = d3.scale.ordinal()
+  .domain([1, 2, 3, 4, 11])
+  .rangeRoundBands([0, 100]);
+  
+  console.log ("gScale.range: " + gScale.range() );
+  
+  
+  var scatterData = [{friends: 5, salary: 22000}, {friends: 3, salary: 18000}, {friends: 10, salary: 88000}, {friends: 0, salary: 18}, {friends: 27, salary: 56000}, {friends: 8, salary: 74000}]
+
+  xExtent = d3.extent(scatterData, function(d) {return d.salary});
+  yExtent = d3.extent(scatterData, function(d) {return d.friends});
+  xScale = d3.scale.linear().domain(xExtent).range([0,500]);
+  yScale = d3.scale.linear().domain(yExtent).range([0,500]);
+  
+  console.log("xExtent " + xExtent);
+  
+  
+  
+  
 d3.select("svg")
 .selectAll("rect")
 .data([14, 68, 24500, 430, 19, 1000, 5555])

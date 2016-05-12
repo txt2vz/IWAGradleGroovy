@@ -29,11 +29,23 @@ console.log("d.amaont: " + d.amount + " i " + i);
 return d.amount });
 console.log("max " + max);
 
+var theData = [ 21, 22, 23 ]
+
+var p = d3.select("body").selectAll("p")
+  .data(theData)
+  .enter()
+  .append("p")
+  .text( function (d, i, t, z) { 
+	  var t = "yes d " + d + " i " + i + " t: " + t + " z " + z;
+	  return t; } );
+ // .update().append("span").text("vv");
+
 </script>
 
 <h1>SHU</h1>
 
 <p>IWA</p>
+<p> </p>
 
 </body>
 </html>

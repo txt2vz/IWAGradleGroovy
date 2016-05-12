@@ -1,0 +1,43 @@
+  {
+  	"Node": 0,
+  	"name": "yog",
+  	"attributes": ["needs water to live"],
+  	"objects": ["frog", "reed", "dog", "corn", "bean", "bream", "fish leech", "water weeds"],
+  	"own_objects": [],
+  	"ObjectCount": "8 | 100%",
+
+  	"children": [{
+  		"Node": 1,
+  		"name": "yog1",
+  		"attributes": ["lives in water"],
+  		"objects": ["bream", "fish leech", "water weeds", "reed", "frog"],
+  		"own_objects": [],
+  		"ObjectCount": "5 | 62%"
+  	}, {
+  		"Node": 2,
+  		"name": "yog2",
+  		"ParentNode": 0,
+  		"attributes": ["lives on land"],
+  		"objects": ["dog", "frog", "corn", "bean", "reed"],
+  		"own_objects": [],
+  		"ObjectCount": "5 | 62%"
+  	}, {
+  		"Node": 7,
+  		"name": "yog7",
+  		"ParentNode": 0,
+  		"attributes": ["needs chlorophyll"],
+  		"objects": ["corn", "reed", "bean"],
+  		"own_objects": [],
+  		"ObjectCount": "3 | 37%",
+
+  		"children": [{
+  			"Node": 9,
+  			"name": "yog9",
+  			"ParentNode": 7,
+  			"attributes": ["breast feeds"],
+  			"objects": ["dog"],
+  			"own_objects": ["dog"],
+  			"ObjectCount": "1 | 12%"
+  		}]
+  	}]
+  }
