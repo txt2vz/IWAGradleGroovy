@@ -1,0 +1,137 @@
+{
+	"Concepts":
+	[
+		{
+			"Node" : 0,
+			"ParentNode" : -1,
+			"attributes" : ["needs water to live"],
+			"objects" : []
+		},
+
+		{
+			"Node" : 1,
+			"ParentNode" : 0,
+			"attributes" : ["dicotyledon","needs chlorophyll","lives on land"],
+			"objects" : ["bean"]
+		},
+
+		{
+			"Node" : 2,
+			"ParentNode" : 0,
+			"attributes" : ["breast feeds","has limbs","can move","lives on land"],
+			"objects" : ["dog"]
+		},
+
+		{
+			"Node" : 3,
+			"ParentNode" : 0,
+			"attributes" : ["monocotyledon","needs chlorophyll"],
+			"objects" : []
+		},
+
+		{
+			"Node" : 4,
+			"ParentNode" : 0,
+			"attributes" : ["has limbs","can move"],
+			"objects" : []
+		},
+
+		{
+			"Node" : 5,
+			"ParentNode" : 0,
+			"attributes" : ["needs chlorophyll"],
+			"objects" : ["water weeds"]
+		},
+
+		{
+			"Node" : 6,
+			"ParentNode" : 0,
+			"attributes" : ["can move"],
+			"objects" : ["dog"]
+		},
+
+		{
+			"Node" : 7,
+			"ParentNode" : 0,
+			"attributes" : ["lives in water"],
+			"objects" : ["water weeds","fish leech","bream"]
+		},
+
+		{
+			"Node" : 8,
+			"ParentNode" : 0,
+			"attributes" : ["lives on land"],
+			"objects" : ["frog","reed","dog","corn","bean"]
+		},
+
+		{
+			"Node" : 9,
+			"ParentNode" : 7,
+			"attributes" : ["lives on land"],
+			"objects" : ["frog","reed"]
+		},
+
+		{
+			"Node" : 10,
+			"ParentNode" : 6,
+			"attributes" : ["lives in water"],
+			"objects" : ["frog","bream","fish leech"]
+		},
+
+		{
+			"Node" : 11,
+			"ParentNode" : 5,
+			"attributes" : ["lives on land"],
+			"objects" : ["reed","corn","bean"]
+		},
+
+		{
+			"Node" : 12,
+			"ParentNode" : 4,
+			"attributes" : ["lives in water"],
+			"objects" : ["bream"]
+		},
+
+		{
+			"Node" : 13,
+			"ParentNode" : 4,
+			"attributes" : ["lives on land"],
+			"objects" : ["frog","dog"]
+		},
+
+		{
+			"Node" : 14,
+			"ParentNode" : 12,
+			"attributes" : ["lives on land"],
+			"objects" : ["frog"]
+		},
+
+		{
+			"Node" : 15,
+			"ParentNode" : 3,
+			"attributes" : ["lives in water"],
+			"objects" : ["water weeds"]
+		},
+
+		{
+			"Node" : 16,
+			"ParentNode" : 3,
+			"attributes" : ["lives on land"],
+			"objects" : ["reed","corn"]
+		},
+
+		{
+			"Node" : 17,
+			"ParentNode" : 15,
+			"attributes" : ["lives on land"],
+			"objects" : ["reed"]
+		},
+
+		{
+			"Node" : 18,
+			"ParentNode" : -1,
+			"attributes" : ["dicotyledon","breast feeds","monocotyledon","has limbs","needs chlorophyll","can move","lives in water","lives on land","needs water to live"],
+			"objects" : []
+		}
+	]
+}

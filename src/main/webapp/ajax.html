@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+       $.ajax({
+      type: "POST",
+      url: "ajax.groovy",
+      cache: false,
+      data: "name=John&location=Sheffield",
+      success: function(dataReturned, status){
+        $("#result").append(dataReturned);
+        $("#status").append("status: " + status);
+        $('#my_image').attr('src','whaleOut3.png');
+      } 
+    });
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="result">Result from ajax.groovy should appear here </div>
+<div id="status"></div>
+<img id="my_image" src="obama.png"/>
+<button>Get External Content</button>
+
+</body>
+</html>

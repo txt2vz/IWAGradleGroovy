@@ -1,35 +1,35 @@
-  {
-  	"Node": 0,  
-  	"attributes": ["needs water to live"],
-  	"objects": ["frog", "reed", "dog", "corn", "bean", "bream", "fish leech", "water weeds"],
-  	"own_objects": [],
-  	"ObjectCount": "8 | 100%",
+ {
+ 	"Node": 0,
+ 	"attributes": ["needs water to live"],
+ 	"objects": ["frog", "reed", "dog", "corn", "bean", "bream", "fish leech", "water weeds"],
+ 	"own_objects": [],
+ 	"ObjectCount": "8 | 100%",
 
-  	"children": [{
-  		"Node": 1,  	
-  		"attributes": ["lives in water"],
-  		"objects": ["bream", "fish leech", "water weeds", "reed", "frog"],
-  		"own_objects": [],
-  		"ObjectCount": "5 | 62%"
-  	}, {
-  		"Node": 2,  	  	
-  		"attributes": ["lives on land"],
-  		"objects": ["dog", "frog", "corn", "bean", "reed"],
-  		"own_objects": [],
-  		"ObjectCount": "5 | 62%"
-  	}, {
-  		"Node": 7,  	
-  		"attributes": ["needs chlorophyll"],
-  		"objects": ["corn", "reed", "bean"],
-  		"own_objects": [],
-  		"ObjectCount": "3 | 37%",
+ 	"children": [{
+ 		"Node": 1,
+ 		"attributes": ["lives in water"],
+ 		"objects": ["bream", "fish leech", "water weeds", "reed", "frog"],
+ 		"own_objects": [],
+ 		"ObjectCount": "5 | 62%"
+ 	}, {
+ 		"Node": 2,
+ 		"attributes": ["lives on land"],
+ 		"objects": ["dog", "frog", "corn", "bean", "reed"],
+ 		"own_objects": [],
+ 		"ObjectCount": "5 | 62%"
+ 	}, {
+ 		"Node": 7,
+ 		"attributes": ["needs chlorophyll"],
+ 		"objects": ["corn", "reed", "bean"],
+ 		"own_objects": [],
+ 		"ObjectCount": "3 | 37%",
 
-  		"children": [{  	
-  			"ParentNode": 7,
-  			"attributes": ["breast feeds"],
-  			"objects": ["dog"],
-  			"own_objects": ["dog"],
-  			"ObjectCount": "1 | 12%"
-  		}]
-  	}]
-  }
+ 		"children": [{
+ 			"Node": 9,
+ 			"attributes": ["breast feeds"],
+ 			"objects": ["dog"],
+ 			"own_objects": ["dog"],
+ 			"ObjectCount": "1 | 12%"
+ 		}]
+ 	}]
+ }

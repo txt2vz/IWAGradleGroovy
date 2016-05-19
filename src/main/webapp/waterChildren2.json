@@ -1,0 +1,38 @@
+  {
+       "Node": 0,
+       "name" : "yog",
+       "attributes": ["needs water to live"],
+       "objects": ["frog", "reed", "dog", "corn", "bean", "bream", "fish leech", "water weeds"],
+       "size": 18000,
+
+      "children": [{
+               "Node": 1,
+                "name" : "yog1",
+               "ParentNode": 0,
+               "attributes": ["dicotyledon", "needs chlorophyll", "lives on land", "needs water to live"],
+               "objects": ["bean"]
+           },
+          {
+               "Node": 2,
+                "name" : "yog2",
+               "ParentNode": 0,
+               "attributes": ["breast feeds", "has limbs", "can move", "lives on land", "needs water to live"],
+               "objects": ["dog"]
+           },
+          {
+               "Node": 7,
+                "name" : "yog7",
+               "ParentNode": 0,
+               "attributes": ["lives in water", "needs water to live"],
+               "objects": ["frog", "reed", "bream", "fish leech", "water weeds"],
+
+              "children": [{
+                   "Node": 9,
+                    "name" : "yog9",
+                   "ParentNode": 7,
+                   "attributes": ["lives on land", "lives in water", "needs water to live"],
+                   "objects": ["frog", "reed"]
+               }]
+           }
+       ]
+  }

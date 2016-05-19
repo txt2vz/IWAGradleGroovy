@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8">
+</script>
+
+<body>
+    <script>
+        // an array of numbers
+        var numbers = [7, 4, 10, 14];
+        
+        //a json object
+        var data = [{
+            date: '2013-01-01',
+            amount: 10
+        }, {
+            date: '2015-07-04',
+            amount: 20
+        }, {
+            date: '2012-03-08',
+            amount: 40
+        }, {
+            date: '2010-04-01',
+            amount: 80
+        }];
+         
+        //use d3 to get the minimum value from the array of numbers
+        var min = d3.min(numbers);
+        
+        //use d3 to return an array with the min and max values
+        var extent = d3.extent(numbers);
+        
+        //use d3 to scale values
+        var scl = d3.scale.linear().domain([0, 10]).range([0, 100]);
+
+        console.log("min: " + min);
+        console.log("extent: " + extent);
+        console.log("scl: " + scl);
+        console.log("scl(8): " + scl(8));
+        
+        // use d3 to get the max value from an object.
+        // we use a callback function.
+        var max = d3.max(data, function(d, i) {
+            console.log("d.amount: " + d.amount + " i " + i);
+            return d.amount
+        });
+        console.log("max amount " + max);
+        
+    </script>
+
+    <h1>SHU</h1>
+    <p>Test D3</p>
+</body>
+</html>
